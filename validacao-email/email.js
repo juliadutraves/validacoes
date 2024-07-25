@@ -1,11 +1,12 @@
-//CÓDIGO DE VALIDAÇÃO DE EMAIL
-
-function checaremail(){
-if(document.forms[0].email.value == "" || document.forms[0].email.value.indexOf('@') == -1 || document.value.forms[0].email.indexOf('.') == -1 ){ alert("Por favor, informe um e_mail válido");
-
-return false;
-}else{
-    alert("E-mail informado com sucesso");
-    document.getElementById('email').innerHTML = document.forms[0].email.value;
-}
+// Função para validar o e-mail
+function checarEmail() {
+    // Captura o valor do campo de e-mail
+    var email = document.forms[0].email.value;
+    if (email === "" || email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+        alert("Por favor, informe um e-mail válido");
+        return false; // Retorna false para evitar o envio do formulário
+    } else {
+        alert("E-mail informado com sucesso");
+        document.getElementById('email').innerHTML = email; // Exibe o e-mail validado no elemento com id 'email'
+    }
 }

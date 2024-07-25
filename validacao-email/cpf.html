@@ -3,22 +3,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Validação de CPF</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='cpf.css'>
- 
+    <link rel='stylesheet' type='text/css' media='screen' href='cpf.css'> <!-- Link para o arquivo CSS -->
 </head>
 <body>
-    
-    <form action="cpfForm">
-        <label for="">CPF:</label>
-<input type="text" id="CPF" name="CPF" maxlength="14" >
-<button type="submit">"VALIDAR" </button>
-        </form>
-        <p><id="message"></p>
-        <script src='cpf.js'></script>
-
-
-
+    <form action="cpfForm"> <!-- Formulário de validação de CPF -->
+        <label for="CPF">CPF:</label> <!-- Rótulo associado ao campo de CPF -->
+        <input type="text" id="CPF" name="CPF" maxlength="14"> <!-- Campo de entrada para o CPF -->
+        <button type="submit">VALIDAR</button> <!-- Botão de submissão do formulário -->
+    </form>
+    <p id="message"></p> <!-- Parágrafo para exibir mensagens de validação -->
+    <script src='cpf.js'></script> <!-- Script JavaScript para validação de CPF -->
 </body>
 </html>

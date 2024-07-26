@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Validação de E-mail</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='email.css'> <!-- Vinculação do arquivo CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="email.css">
 </head>
 <body>
-    <form action=""> <!-- Formulário de validação de e-mail -->
-        <label>E-mail:</label>
-        <input type="text" id="emailUser" name="email" onblur="checarEmail()"> <!-- Campo de entrada para o e-mail -->
-        <input type="submit" value="VALIDAR"> <!-- Botão de submissão do formulário -->
+    <form id="emailForm" onsubmit="return checarEmail()">
+        <label for="E-mailUser">E-mail:</label>
+        <input type="text" id="E-mailUser" name="email" placeholder="Digite seu e-mail">
+        <input type="submit" value="Validar">
     </form>
-    <p id="email"></p> <!-- Parágrafo para exibir o e-mail validado -->
-    <script src="email.js"></script> <!-- Inclusão adicional do script JavaScript -->
+    <p id="email"></p>
+    <script src="email.js"></script>
 </body>
 </html>
-
